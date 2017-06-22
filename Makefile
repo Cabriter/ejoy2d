@@ -43,7 +43,7 @@ lib/lgeometry.c\
 lib/lua-clientsocket.c
 
 SRC := $(EJOY2D) $(RENDER) $(SPROTO) $(LPEG)
-
+ 
 LUASRC := \
 lua/lapi.c \
 lua/lauxlib.c \
