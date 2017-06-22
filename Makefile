@@ -8,6 +8,10 @@ lib/render/render.c \
 lib/render/carray.c \
 lib/render/log.c
 
+SPROTO :=\
+lib/sproto/sproto.c\
+lib/sproto/lsproto.c\
+
 EJOY2D := \
 lib/shader.c \
 lib/lshader.c \
@@ -28,9 +32,10 @@ lib/lparticle.c \
 lib/scissor.c \
 lib/renderbuffer.c \
 lib/lrenderbuffer.c \
-lib/lgeometry.c
+lib/lgeometry.c\
+lib/lua-clientsocket.c
 
-SRC := $(EJOY2D) $(RENDER)
+SRC := $(EJOY2D) $(RENDER) $(SPROTO)
 
 LUASRC := \
 lua/lapi.c \
