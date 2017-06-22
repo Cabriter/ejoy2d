@@ -10,7 +10,14 @@ lib/render/log.c
 
 SPROTO :=\
 lib/sproto/sproto.c\
-lib/sproto/lsproto.c\
+lib/sproto/lsproto.c
+
+LPEG :=\
+lib/lpeg/lpcap.c\
+lib/lpeg/lpcode.c\
+lib/lpeg/lpprint.c\
+lib/lpeg/lptree.c\
+lib/lpeg/lpvm.c
 
 EJOY2D := \
 lib/shader.c \
@@ -35,7 +42,7 @@ lib/lrenderbuffer.c \
 lib/lgeometry.c\
 lib/lua-clientsocket.c
 
-SRC := $(EJOY2D) $(RENDER) $(SPROTO)
+SRC := $(EJOY2D) $(RENDER) $(SPROTO) $(LPEG)
 
 LUASRC := \
 lua/lapi.c \
